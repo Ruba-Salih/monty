@@ -116,4 +116,3 @@ void add_queue(stack_t **node,  __attribute__((unused))unsigned int line)
 	tmp->next = *node;
 	(*node)->prev = tmp;
 }
-
