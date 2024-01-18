@@ -109,7 +109,6 @@ void fun_(char *opcode, char *val, int flag, unsigned int line_number)
 		{"pstr", print_str},
 		{"rotl", rotl},
 		{"rotr", rotr},
-		{NULL, NULL}
 	};
 	if (opcode[0] == '#')
 		return;
