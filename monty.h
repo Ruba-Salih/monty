@@ -63,5 +63,9 @@ void div_(stack_t **node, unsigned int line_number);
 void sub(stack_t **node, unsigned int line_number);
 void nop(stack_t **node, unsigned int line_number);
 void mul(stack_t **node, unsigned int line_number);
+void print_char(stack_t **node, unsigned int line_number);
+void print_str(stack_t **node, __attribute__((unused))unsigned int line);
+void rotl(stack_t **node, __attribute__((unused))unsigned int line);
+void rotr(stack_t **node, __attribute__((unused))unsigned int line);
 
 #endif

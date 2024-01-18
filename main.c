@@ -105,6 +105,10 @@ void fun_(char *opcode, char *val, int flag, unsigned int line_number)
 		{"div", div_},
 		{"mul", mul},
 		{"mod", mod},
+		{"pchar", print_char},
+		{"pstr", print_str},
+		{"rotl", rotl},
+		{"rotr", rotr},
 		{NULL, NULL}
 	};
 	if (opcode[0] == '#')
