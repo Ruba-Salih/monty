@@ -82,7 +82,7 @@ int tok(char *buffer, int flag, unsigned int line_number)
 /**
  * fun_ - find the appropriate function for the opcode
  * @opcode: opcode
- * @val: arguments of opcode
+ * @val: argument of opcode
  * @line_number: argument of opcode
  * @flag:  storage format. If 0 Nodes will be entered as a stack.
  * if 1 nodes will be entered as a queue.
@@ -109,6 +109,7 @@ void fun_(char *opcode, char *val, int flag, unsigned int line_number)
 		{"pstr", print_str},
 		{"rotl", rotl},
 		{"rotr", rotr},
+		{NULL, NULL}
 	};
 	if (opcode[0] == '#')
 		return;
@@ -176,3 +177,5 @@ void find_fun(fun func, char *opcode, char *val, int flag, unsigned int line)
 	else
 		func(&top, line);
 }
+
+
