@@ -7,6 +7,8 @@
  */
 void push_(stack_t **new_node, __attribute__((unused))unsigned int line)
 {
+	struct stack_s *tmp;
+
 	check(new_node);
 
 	if (top == NULL)
@@ -15,9 +17,10 @@ void push_(stack_t **new_node, __attribute__((unused))unsigned int line)
 		return;
 	}
 
-	(*new_node)->next = top;
+	tmp = top;
 	top = *new_node;
-	(*new_node)->prev = NULL;
+	top->next = tmp;
+	tmp->prev = top;
 }
 
 /**
